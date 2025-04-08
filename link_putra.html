@@ -6,6 +6,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+
+     <style>
+        .responsive-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 aspect ratio (change this value to match your video's aspect ratio) */
+        }
+
+        .responsive-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+         /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+            .responsive-container {
+                padding-top: 0;
+                height: auto;
+            }
+
+            .responsive-container iframe {
+                position: static;
+                width: 100%;
+                height: 100vh;
+            }
+        }
+    </style>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
 </head>
