@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertandingan Futsal</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+            background-color: #007bff;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+
+        .nav-link:hover {
+           important;
+        }
+
+        .section {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .section p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .section i {
+            margin-bottom: 10px;
+            font-size: 50px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pertandingan Futsal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container mt-5">
+        <div id="putri" class="section" onclick="window.location.href='link_putri.html'">
+            <i class="fas fa-female"></i>
+            <h2>Futsal Putri</h2>
+            <p>Informasi tentang pertandingan futsal putri.</p>
+        </div>
+        <div id="putra" class="section" onclick="window.location.href='link_putra.html'">
+            <i class="fas fa-male"></i>
+            <h2>Futsal Putra</h2>
+            <p>Informasi tentang pertandingan futsal putra.</p>
+        </div>
+        <div id="legend" class="section" onclick="window.location.href='link_legend.html'">
+            <i class="fas fa-trophy"></i>
+            <h2>Legend U40</h2>
+            <p>Informasi tentang pertandingan futsal Legend U40.</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
